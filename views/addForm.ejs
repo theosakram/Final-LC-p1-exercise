@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <form action="/books/add" method="POST">
+    <label for="fname">Title</label><br>
+    <input type="text" id="title" name="title" value="" required><br>
+    <label for="lname">ISBN</label><br>
+    <input type="text" id="isbn" name="isbn" value="" required><br><br>
+    <label for="lname">Stock</label><br>
+    <input type="text" id="stock" name="stock" value="" required><br><br>
+    <label for="lname">Price</label><br>
+    <input type="text" id="price" name="price" value="" required><br><br>
+    <label for="author">Author</label>
+    <select name="author_id" id="author">
+      <option value="" selected>Choose</option>
+      <% for (let i = 0; i < data.length; i++) { %>
+      <option value="<%= data[i].id%>"><%= data[i].name%></option>
+      <% } %>
+    </select>
+    <input type="submit" value="Submit">
+  </form>
+</body>
+
+</html>

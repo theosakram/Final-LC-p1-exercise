@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    table,
+    th,
+    td {
+      border: 1px solid black;
+    }
+  </style>
+</head>
+
+<body>
+  <table>
+    <tr>
+      <th>No</th>
+      <th>Title</th>
+      <th>ISBN</th>
+      <th>Stock</th>
+      <th>Price</th>
+      <th>Author</th>
+      <th>Action</th>
+    </tr>
+
+    <% for (let i = 0; i < data.length; i++) { %>
+    <tr>
+      <td><%= data[i].id %></td>
+      <td><%= data[i].title %></td>
+      <td><%= data[i].isbn %></td>
+      <td><%= data[i].stock %></td>
+      <td><%= data[i].price %></td>
+      <td><%= data[i].Author.name %></td>
+      <td><a href="/books/restock/<%= data[i].id %>" style="text-decoration: none;">Restock</a> | <a
+          href="/books/delete/<%= data[i].id %>" style="text-decoration: none;">Delete</a></td>
+    </tr>
+    <% } %>
+  </table>
+</body>
+
+</html>

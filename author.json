@@ -1,0 +1,22 @@
+[
+  {
+    "name": "J.K Rowling",
+    "age": 54,
+    "gender": "Female"
+  },
+  {
+    "name": "George R. R. Martin",
+    "age": 71,
+    "gender": "Male"
+  },
+  {
+    "name": "Suzanne Collins",
+    "age": 57,
+    "gender": "Female"
+  },
+  {
+    "name": "James Dashner",
+    "age": 47,
+    "gender": "Male"
+  }
+]

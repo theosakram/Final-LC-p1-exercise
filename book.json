@@ -1,0 +1,30 @@
+[
+  {
+    "title": "Harry Potter",
+    "isbn": "763019",
+    "price": 120000,
+    "stock": 3,
+    "author_id": 1
+  },
+  {
+    "title": "Song of Ice and Fire",
+    "isbn": "647890",
+    "price": 125000,
+    "stock": 4,
+    "author_id": 2
+  },
+  {
+    "title": "The Hunger Games",
+    "isbn": "156375",
+    "price": 97000,
+    "stock": 7,
+    "author_id": 3
+  },
+  {
+    "title": "Maze Runner",
+    "isbn": "463902",
+    "price": 89000,
+    "stock": 2,
+    "author_id": 4
+  }
+]
